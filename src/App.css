@@ -4,3 +4,157 @@
   padding: 2rem;
   text-align: center;
 }
+
+body {
+  text-align: center;
+  background-image: url(Tomato.jpg);
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-position: center;
+  /*background-attachment: fixed;*/
+  background-blend-mode: darken;
+  margin-top: 300px;
+  color: white;
+  background-color: rgb(241, 218, 214);
+  /*overflow: hidden;*/
+}
+
+.wrapper {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+}
+
+h1 {
+  color: rgb(96, 76, 76);
+  margin-top: 50px;
+  margin-bottom: -25px;
+  font-size: 40px;
+}
+.layout {
+  display: inline-block;
+  margin: 45px;
+  color: black;
+}
+
+.arrows {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.arrows section {
+  display: inline-block;
+  margin-top: -8px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-top: 190px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.timer-elements {
+  font-size: 80px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+button {
+  margin-top: 120px;
+  width: 170px;
+  height: 65px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 15px;
+  background-color: red;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#start-stop {
+  background-color: rgb(9, 163, 99);
+}
+
+@media (max-width: 600px) {
+  body {
+    background-size: 400px;
+  }
+
+  h1 {
+    margin-bottom: -30px;
+    font-size: 35px;
+  }
+
+  .layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -50px;
+  }
+
+  #session-increment,
+  #session-decrement,
+  #break-increment,
+  #break-decrement {
+    font-size: 20px;
+    margin: 15px;
+  }
+
+  #break-length,
+  #session-length {
+    font-size: 20px;
+  }
+  .timer {
+    margin-top: 30px;
+  }
+
+  .timer-elements {
+    margin-top: 210px;
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
+
+  button {
+    width: 180px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+@media (max-height: 600px) {
+  body {
+    background-size: 400px;
+  }
+
+  .timer-elements {
+    font-size: 40px;
+    margin-top: -170px;
+  }
+
+  button {
+    margin-top: 40px;
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
