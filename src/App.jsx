@@ -3,6 +3,8 @@ import "./App.css";
 import { Helmet } from "react-helmet";
 import Tomato from "/Tomato.jpg";
 import BreakTimer from "./BreakTimer";
+import SessionTimer from "./SessionTimer";
+import PomodoroTimer from "./PomodoroTimer";
 function App() {
   return (
     <>
@@ -26,6 +28,7 @@ function App() {
 
       <h1>Pomodorooo</h1>
       <BreakTimer />
+      <SessionTimer />
     </>
   );
 }

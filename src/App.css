@@ -54,7 +54,7 @@ h1 {
 .timer {
   display: flex;
   justify-content: center;
-  margin-top: 190px;
+  margin-top: 10px;
   font-family: "Orbitron", sans-serif;
 }
 
@@ -123,7 +123,7 @@ button {
   }
 
   .timer-elements {
-    margin-top: 210px;
+    margin-top: 20px;
     font-size: 40px;
     margin-bottom: 70px;
   }
