@@ -45,7 +45,7 @@ function SessionTimer() {
       }, 1000);
     } else {
       clearInterval(intervalId);
-      setTimerActive(false);
+      setTimerActive(false); //THIS ISNT WORKING
     }
 
     //ELSE
