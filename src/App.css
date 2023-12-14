@@ -1,44 +1,42 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
 }
 
 body {
-  text-align: center;
   background-image: url(Tomato.jpg);
   background-repeat: no-repeat;
-  background-size: 700px;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 600px;
   background-position: center;
-  /*background-attachment: fixed;*/
   background-blend-mode: darken;
-  margin-top: 300px;
+  margin-top: 50px;
   color: white;
   background-color: rgb(241, 218, 214);
-  /*overflow: hidden;*/
-}
-
-.wrapper {
-  position: relative;
-  text-align: center;
-  justify-content: center;
 }
 
 h1 {
-  color: rgb(96, 76, 76);
-  margin-top: 50px;
-  margin-bottom: -25px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 100px;
   font-size: 40px;
 }
 .layout {
   display: inline-block;
-  margin: 45px;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-bottom: 120px;
   color: black;
+  background-color: rgb(255, 255, 255, 0.5);
+  padding: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 16px;
 }
 
 .arrows {
-  font-size: 28px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -52,9 +50,10 @@ h1 {
 }
 
 .timer {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: "Orbitron", sans-serif;
 }
 
@@ -77,8 +76,16 @@ button {
   cursor: pointer;
 }
 
-#start-stop {
+#green-start-stop {
   background-color: rgb(9, 163, 99);
+}
+
+#red-start-stop {
+  background-color: red;
+}
+
+#blue-start-stop {
+  background-color: blue;
 }
 
 @media (max-width: 600px) {
@@ -103,7 +110,6 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: -50px;
   }
 
   #session-increment,

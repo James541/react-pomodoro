@@ -26,7 +26,7 @@ function App() {
         />
       </Helmet>
 
-      <h1>Pomodorooo</h1>
+      <h1>Pomodoro Timer</h1>
       <BreakTimer />
       <SessionTimer />
     </>
